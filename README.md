@@ -15,6 +15,13 @@ sudo tar xvzf kernelmodules.tgz -C /lib/modules/
 Be aware that grub.cfg is configured for my setup. only use as an example on how to configure.
 Do NOT use it as-is, your board may not boot with it.
 
+Specifically of interest is the part:
+
+```
+drm.debug=0xf drm_kms_helper.edid_firmware=edid/1920x1080.bin video=HDMI-A-1:1920x1080@60e consoleblank=0
+```
+
+This is added to force the kernel to use a specific edid and force the resolution to 1920x1080.
 
 ## /boot directory:
 
