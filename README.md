@@ -1,6 +1,15 @@
 # hikey970
 binary files for the hikey 970 such as kernel and modules.
 
+## kernelmodules.tgz
+
+the modules belong in the directory /lib/modules
+
+```
+sudo tar xvzf kernelmodules.tgz -C /lib/modules/
+```
+
+
 ## grub.cfg
 
 Be aware that grub.cfg is configured for my setup. only use as an example on how to configure.
